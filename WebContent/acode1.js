@@ -5,7 +5,7 @@ function changeDiv() {
 		width : 300,
 		height : 150,
 		layout : 'fit',
-		autoload : {
+		autoLoad : {
 			url : 'sayHi.html',
 			scripts : true
 		}
