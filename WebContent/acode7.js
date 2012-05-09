@@ -26,7 +26,30 @@ var myWin = new Ext.Window({
 });
 
 myWin.show();
-	
+
+Ext.getCmp('myWindow').add({
+	id:'addedPanel',
+	title : 'appended panel',
+	html : 'Hello there !'
+});
+
+Ext.getCmp('myWindow').add({
+	id:'addedPanel2',
+	title : 'appended panel2',
+	html : 'Hello there !2'
+});
+
+Ext.getCmp('myWindow').insert(1,{
+	id : 'insertedPanel',
+	title : 'Inserted Panel',
+	html : 'Hello inserted'
+});
+
+Ext.getCmp('myWindow').doLayout();
+
+var panelToRemove = Ext.getCmp('addedPanel2');
+Ext.getCmp('myWindow').remove(panelToRemove);
+
 }
 
 
