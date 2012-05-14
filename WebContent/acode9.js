@@ -4,7 +4,7 @@ function handler() {
 	var myBtnHandler = function(btn){
 		Ext.MessageBox.alert('You Clicked',btn.text);
 	}
-	var i = 1;
+	
 	var fileBtn = new Ext.Button({
 		text : 'File',
 		handler : myBtnHandler
@@ -24,6 +24,20 @@ function handler() {
 		         editBtn
 		         ]
 	});
+	
+	var myBottomToolbar = [
+	                       {
+	                    	text : 'save',
+	                    	handler : myBtnHandler
+	                       },
+	                       '-',
+	                       {
+	                    	text : 'cancel',
+	                    	handler : myBtnHandler
+	                       },
+	                       '->',
+	                       '<b>items open :1</b>'
+	                       ];
 	
 	
 	new Ext.Viewport({
@@ -45,8 +59,10 @@ function handler() {
 		        	 title : 'center',
 		        	 items : 
 			        		 [
+			        		  myTopToolbar,
 			        		  myTopToolbar
-			        		  ]
+			        		  //myBottomToolbar
+			        		   ]
 		         }
 		         ]
 		
