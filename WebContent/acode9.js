@@ -4,7 +4,7 @@ function handler() {
 	var myBtnHandler = function(btn){
 		Ext.MessageBox.alert('You Clicked',btn.text);
 	}
-	
+	var i = 1;
 	var fileBtn = new Ext.Button({
 		text : 'File',
 		handler : myBtnHandler
