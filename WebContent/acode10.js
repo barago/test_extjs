@@ -15,8 +15,8 @@ function handler() {
 				constrain : true
 			});
 		}
-		win.show()	
-	}
+		win.show();	
+	};
 	
 	new Ext.Button({
 		renderTo : Ext.getBody(),
